@@ -52,3 +52,24 @@ body{
     width: 250px;
     margin: 0 auto;
 }
+.nav-bar{
+    border: 2px solid;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    background-color: #0c2e8b;
+}
+.container{
+    height: auto;
+    width: auto;
+}
+.left-aside{
+position: relative;
+float: left;
+width: 50%;
+}
+.right-aside{
+    position: relative;
+float: right;
+width: 50%;
+}
