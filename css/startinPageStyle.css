@@ -1,0 +1,54 @@
+body{
+    background-image: url("/images/startingPageBackground.png");
+    font-family: Helvetica, sans-serif;
+}
+
+.title{
+    
+    text-align: center;
+    color: white;
+    font-size: 8rem;
+    margin-top: 6rem;
+}
+
+.container{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.option{
+    width: 50%;
+}
+
+.optionTitle{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.optionDescription{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.boton{
+    font-size: 21px;
+    border: 2px solid transparent;
+    text-align: center;
+    background: #ffffff;
+    color: #0c2e8b;
+    line-height: 25px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 4px;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
