@@ -73,3 +73,11 @@ width: 50%;
 float: right;
 width: 50%;
 }
+.questions{
+    background-color: #ffffff;
+}
+.badge{
+    width: 20%;
+    height: 90%;
+    background-color: azure;
+}
