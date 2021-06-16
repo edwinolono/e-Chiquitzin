@@ -6,15 +6,15 @@
     <script lang="JavaScript">
         var hombre = new Array("  ___\n" , "   |\n", "   O\n", "  /", "|", "\\\n", "  /", "\\\n", "___")
         var palabra
-        var libreriaPalabras = new Array("multimedia", "internauta", "servidor", "protocolo", "cortafuegos", "navegador", "nodo", "descargar", "conectar", "dinamico", "lapiz", "ofimatica", "informe")
+        var libreriaPalabras = new Array("uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez", "moneda", "lapiz", "borrador","amigo")
         var partes = 0
         var colNueva = 0
         var jugando
         function ObtienePalabra() {
             var indice = Math.round (Math.random() * 13)
             var cadena = new String ( libreriaPalabras[indice])
-            palabra = cadena.split(" ")
-            console.log(palabra);
+            palabra = cadena
+            console.log(palabra + typeof(cadena));
         }
         function DibujaHombre(visor, partes){
             var dibujo = ""
@@ -31,6 +31,7 @@
             var letrasCadena = cadena.split(" ")
             cadena = ""
             for(var x = 0; x < palabra.length;  x++){
+                console.log(palabra[x] + " == " + letra)
                 if (palabra[x] == letra){
                     cadena += letra + " "
                     flag = true
