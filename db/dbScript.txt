@@ -1,0 +1,54 @@
+CREATE DATABASE e_chiquitzin;
+
+USE e_chiquitzin;
+
+CREATE TABLE administrador(
+    -> id int NOT NULL AUTO_INCREMENT,
+    -> nombre varchar(15) NOT NULL,
+    -> apellido varchar(15) NOT NULL,
+    -> email varchar(50) NOT NULL,
+    -> password varchar(15) NOT NULL,
+    -> PRIMARY KEY(id));
+
+CREATE TABLE profesor(
+    -> idProfesor int NOT NULL AUTO_INCREMENT,
+    -> nombre varchar(15) NOT NULL,
+    -> apellido varchar(15) NOT NULL,
+    -> email varchar(30) NOT NULL,
+    -> password varchar(15) NOT NULL,
+    -> PRIMARY KEY(idProfesor));
+
+CREATE TABLE grupo(
+    -> idGrupo int NOT NULL AUTO_INCREMENT,
+    -> nombre varchar(15) NOT NULL,
+    -> idProfesor int,
+    -> PRIMARY KEY(idGrupo),
+    -> FOREIGN KEY (idProfesor) REFERENCES profesor(idProfesor) ON DELETE SET NULL);
+
+CREATE TABLE ejercicio(
+    -> idEjercicio int NOT NULL AUTO_INCREMENT,
+    -> titulo varchar(20) NOT NULL,
+    -> descripcion text,
+    -> idProfesor int, 
+    -> PRIMARY KEY(idEjercicio),
+    -> FOREIGN KEY (idProfesor) REFERENCES profesor(idProfesor) ON DELETE SET NULL);
+
+CREATE TABLE alumno(
+    -> idAlumno int NOT NULL AUTO_INCREMENT,
+    -> nombre varchar(15) NOT NULL,
+    -> apellido varchar(15) NOT NULL,
+    -> email varchar(30) NOT NULL,
+    -> password varchar(15) NOT NULL,
+    -> idGrupo int,
+    -> PRIMARY KEY(idAlumno),
+    -> FOREIGN KEY (idGrupo) REFERENCES grupo(idGrupo) ON DELETE SET NULL);
+
+CREATE TABLE calificacion(
+    -> idCalificacion int NOT NULL AUTO_INCREMENT,
+    -> victoria int NOT NULL,
+    -> derrota int NOT NULL,
+    -> idAlumno int,
+    -> idEjercicio int,
+    -> PRIMARY KEY(idCalificacion),
+    -> FOREIGN KEY (idAlumno) REFERENCES alumno(idAlumno) ON DELETE SET NULL,
+    -> FOREIGN KEY (idEjercicio) REFERENCES ejercicio(idEjercicio) ON DELETE SET NULL);
