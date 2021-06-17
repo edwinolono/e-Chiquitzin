@@ -51,7 +51,7 @@
         if($rol == 1){
             header("location:menuAlumno.php");
         }else if($rol == 2){
-            header("location:menuProfesor.php");
+            header("location:menuProfesor.html");
         }else if($rol == 3){
             header("location:menuAdministrador.php");
         }
