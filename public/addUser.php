@@ -6,6 +6,10 @@
     $rol = $_POST["rol"];
     $checky = $_POST["checky"];
 
+    if($checky == null){
+        $checky = 0;
+    }
+
     $userInfo = array();
     $userInfo[0] = $email;
     $userInfo[1] = $password;
@@ -23,7 +27,7 @@
     }
 
     console_log($userInfo);
-    //Abrimos una sesión
+/*    //Abrimos una sesión
     session_start();
     $_SESSION['miSesion'] = array();
     $_SESSION['miSesion'][0] = $email;
@@ -86,3 +90,5 @@
 
     //Cerramos conexión con bd
     mysqli_close($con);
+*/
+?>

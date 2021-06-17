@@ -13,7 +13,6 @@
     <div class="container">
 
         <form id="signup" action="addUser.php" method="POST">
-
             <div class="header">
                 <div class="login-titulo">
                     <h1>Sign Up</h1>
@@ -54,7 +53,7 @@
                     <input name="checky" id="checky" value="1" type="checkbox" /><label class="terms">Acepto los terminos de uso</label>
                 </div>    
                     
-                <a id="submit" href="#">Registrarse</a>
+                <input type="submit" class="submit button" value="Registrarse"/>
 
             </div>
 
