@@ -7,7 +7,7 @@
     </head>
     <body>
         <div class="nav-bar">
-            <h1 class="logo"><a href="menu.html">e-Chiquitzin</a></h1>
+            <h1 class="logo"><a href="menuAlumno.php">e-Chiquitzin</a></h1>
             <div class="sub-menu"> <a>Inicio</a> <a>Mis tareas</a> <a href="Ahorcado.html">Ahorcado</a> <a>Ayuda</a></div>
         </div>
         <div class="container">
