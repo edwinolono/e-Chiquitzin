@@ -3,6 +3,7 @@
     <head>
         <title>Menu e-chiquitzin</title>
         <link rel="stylesheet" href="/css/startingPage/startinPageStyle.css">
+        <link rel="stylesheet" href="../css/menu/menu.css">
     </head>
     <body>
         <div class="nav-bar">
