@@ -38,27 +38,26 @@
     //Conexión a base de datos
     include 'db.php';
 
-
     //Definimos un query para la base de datos
-    if($rol == 1){
-        $query = "INSERT INTO alumno (nombre,apellido,email,password,idGrupo) VALUES ('$nombre','$apellido','$email','$password',1)";    
-    }else if($rol == 2){
+    if($rol == "1"){
+        $query = "INSERT INTO alumno (nombre,apellido,email,password,idGrupo) VALUES ('$nombre','$apellido','$email','$password',null)";    
+    }else if($rol == "2"){
         $query = "INSERT INTO profesor (nombre,apellido,email,password) VALUES ('$nombre','$apellido','$email','$password')";
-    }else if($rol == 3){
+    }else if($rol == "3"){
         $query = "INSERT INTO administrador (nombre,apellido,email,password) VALUES ('$nombre','$apellido','$email','$password')";
     }
 
     
 
     //Ejecutamos el query y el resultado se asigna a la variable result
-    if($checky==1){
+    if($checky=="1"){
         $result = mysqli_query($con, $query);
 
-        if($rol == 1){
+        if($rol == "1"){
             header("location:menuAlumno.php");
-        }else if($rol == 2){
+        }else if($rol == "2"){
             header("location:menuProfesor.php");
-        }else if($rol == 3){
+        }else if($rol == "3"){
             header("location:menuAdministrador.php");
         }
 
@@ -74,10 +73,10 @@
     
 
     //Obtenemos las filas que corresponden al resultado
-    $dbRows = mysqli_num_rows($result);
+    //$dbRows = mysqli_num_rows($result);
 
     //Si encontró registros nos mandará a menu.html
-    if($dbRows){
+    /*if($dbRows){
         if($rol == 1){
             header("location:menuAlumno.php");
         }else if($rol == 2){
@@ -90,11 +89,11 @@
         ?>
         <?php
             //Vamos a obtener la página de login
-            include 'login.php';
+            include 'signUp.php';
         ?>
         <h1 class="errorAut">ERROR EN LA AUTENTIFICACIÓN</h1>
         <?php
-    }
+    }*/
     //Limpiamos resultado
     mysqli_free_result($result);
 

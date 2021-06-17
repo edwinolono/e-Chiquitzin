@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/signUp/ach.css">
+    <link rel="stylesheet" href="/css/signUp/signUp.css">
     <title>Registrarse</title>
 </head>
 
@@ -24,13 +24,13 @@
 
             <div class="inputs">
 
-                <input type="email" placeholder="E-mail" autofocus name="email"/>
+                <input type="email" placeholder="E-mail" autofocus name="email" maxlength="30"/>
 
-                <input type="password" placeholder="Contraseña" name="password"/>
+                <input type="password" placeholder="Contraseña" name="password" maxlength="15"/>
 
-                <input type="text" placeholder="Nombre" name="nombre"/>
+                <input type="text" placeholder="Nombre" name="nombre" maxlength="15"/>
 
-                <input type="text" placeholder="Apellido" name="apellido"/>
+                <input type="text" placeholder="Apellido" name="apellido" maxlength="15"/>
 
                 
 
