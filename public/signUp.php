@@ -12,14 +12,12 @@
 <body background="/images/signUp/backSpace.jpg">
     <div class="container">
 
-        <form id="signup">
+        <form id="signup" action="addUser.php" method="POST">
 
             <div class="header">
                 <div class="login-titulo">
                     <h1>Sign Up</h1>
                 </div>
-
-                <p>Formulaio</p>
 
             </div>
 
@@ -27,14 +25,35 @@
 
             <div class="inputs">
 
-                <input type="email" placeholder="e-mail" autofocus />
+                <input type="email" placeholder="E-mail" autofocus name="email"/>
 
-                <input type="password" placeholder="Contraseña" />
+                <input type="password" placeholder="Contraseña" name="password"/>
 
-                <div class="checkboxy">
-                    <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">Acepto los terminos de uso</label>
+                <input type="text" placeholder="Nombre" name="nombre"/>
+
+                <input type="text" placeholder="Apellido" name="apellido"/>
+
+                
+
+                <div>
+                        <label>
+                            <input type="radio" class="option-input radio" name="rol" checked value="1"/>
+                            Estudiante&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </label>
+                        <label>
+                            <input type="radio" class="option-input radio" name="rol" value="2"/>
+                            Profesor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </label>
+                        <label>
+                            <input type="radio" class="option-input radio" name="rol" value="3"/>
+                            Administrador
+                        </label>
                 </div>
 
+                <div class="checkboxy">
+                    <input name="checky" id="checky" value="1" type="checkbox" /><label class="terms">Acepto los terminos de uso</label>
+                </div>    
+                    
                 <a id="submit" href="#">Registrarse</a>
 
             </div>
