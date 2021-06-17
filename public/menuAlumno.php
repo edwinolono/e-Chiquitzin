@@ -10,7 +10,7 @@
             <div class="sub-menu"> <a>Inicio</a> <a>Mis tareas</a> <a href="Ahorcado.html">Ahorcado</a> <a>Ayuda</a></div>
         </div>
         <div class="container">
-            <div class="left-aside" ">
+            <div class="left-aside" >
                 <div class="stick">
                 <h3>Recuerda terminar tus clases antes de empezar tu examen</h3>
                 </div>
