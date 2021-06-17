@@ -2,7 +2,7 @@
 <htm>
     <head>
         <title>Menu e-chiquitzin</title>
-        <link rel="stylesheet" href="../css/startinPageStyle.css">
+        <link rel="stylesheet" href="/css/startingPage/startinPageStyle.css">
     </head>
     <body>
         <div class="nav-bar">

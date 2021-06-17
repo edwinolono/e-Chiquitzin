@@ -1,4 +1,5 @@
 <?php
+
     $email = $_POST["email"];
     $password = $_POST["password"];
     $nombre = $_POST["nombre"];
@@ -27,7 +28,7 @@
     }
 
     console_log($userInfo);
-/*    //Abrimos una sesión
+    //Abrimos una sesión
     session_start();
     $_SESSION['miSesion'] = array();
     $_SESSION['miSesion'][0] = $email;
@@ -50,15 +51,24 @@
     
 
     //Ejecutamos el query y el resultado se asigna a la variable result
-    if($checky!=1){
+    if($checky==1){
         $result = mysqli_query($con, $query);
+
+        if($rol == 1){
+            header("location:menuAlumno.php");
+        }else if($rol == 2){
+            header("location:menuProfesor.php");
+        }else if($rol == 3){
+            header("location:menuAdministrador.php");
+        }
+
     }else{
         ?>
         <?php
             //Vamos a obtener la página de login
             include 'signUp.php';
         ?>
-        <h1 class="errorAut">NO ACEPTASTE LOS TÉRMINO</h1>
+        <h1 class="errorAut">NO ACEPTASTE LOS TÉRMINOS DE USO</h1>
         <?php
     }
     
@@ -90,5 +100,4 @@
 
     //Cerramos conexión con bd
     mysqli_close($con);
-*/
-?>
+
