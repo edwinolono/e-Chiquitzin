@@ -20,13 +20,25 @@
     console_log($userInfo);
     //Abrimos una sesión
     session_start();
-    $_SESSION['miSesion'] = $email;
+    $_SESSION['miSesion'] = array();
+    $_SESSION['miSesion'][0] = $email;
+    $_SESSION['miSesion'][1] = $password;
+    $_SESSION['miSesion'][2] = $rol;
 
     //Conexión a base de datos
     include 'db.php';
 
+
     //Definimos un query para la base de datos
-    $query = "SELECT * FROM alumno WHERE email= '$email' AND password = '$password'";
+    if($rol == 1){
+        $query = "SELECT * FROM alumno WHERE email= '$email' AND password = '$password'";    
+    }else if($rol == 2){
+        $query = "SELECT * FROM profesor WHERE email= '$email' AND password = '$password'";    
+    }else if($rol == 3){
+        $query = "SELECT * FROM administrador WHERE email= '$email' AND password = '$password'";    
+    }
+
+    
 
     //Ejecutamos el query y el resultado se asigna a la variable result
     $result = mysqli_query($con, $query);
@@ -36,7 +48,13 @@
 
     //Si encontró registros nos mandará a menu.html
     if($dbRows){
-        header("location:menu.html");
+        if($rol == 1){
+            header("location:menuAlumno.php");
+        }else if($rol == 2){
+            header("location:menuProfesor.php");
+        }else if($rol == 3){
+            header("location:menuAdministrador.php");
+        }
     //Si no nos redirijirá a la página de login con un error
     }else{
         ?>
