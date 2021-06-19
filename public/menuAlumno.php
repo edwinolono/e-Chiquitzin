@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<htm>
-    <head>
-        <title>Menu e-chiquitzin</title>
-        <link rel="stylesheet" href="/css/startingPage/startinPageStyle.css">
-        <link rel="stylesheet" href="../css/menu/menu.css">
-    </head>
-    <body>
-        <div class="nav-bar">
-            <h1 class="logo"><a href="menuAlumno.php">e-Chiquitzin</a></h1>
-            <div class="sub-menu"> <a>Inicio</a> <a>Mis tareas</a> <a href="Ahorcado.html">Ahorcado</a> <a>Ayuda</a></div>
-        </div>
+<?php include "./headerAlumno.php" ?>
+
         <div class="container">
             <div class="left-aside" >
                 <div class="stick">
@@ -22,7 +12,7 @@
                         <div class="subject" style="background-color: red;">
                             <h4 style="text-align: center;">Conteo</h4>
                             <ol>
-                                <li><a href="./Clase.html">Clase 1</a></li>
+                                <li><a href="./ejercicios/Clase.php">Clase 1</a></li>
                                 <li><a href="./Clase2.html">Clase 2</a></li>
                                 <li><a href="./Clase3.html">Clase 3</a></li>
                                 <li><a href="./Clase4.html">Clase 4</a></li>

@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<htm>
-    <head>
-        <title>Clase 1 Vamos a contar</title>
-        <link rel="stylesheet" href="/css/startingPage/startinPageStyle.css">
-        
-        <link rel="stylesheet" href="../css/menu/menu.css">
-    </head>
-    <body>
-        <div class="nav-bar">
-            <div class="sub-menu"> <a>Inicio</a> <a>Mis tareas</a> <a>Ayuda</a></div>
-            <h1 class="logo"><a href="menuAlumno.php">e-Chiquitzin</a></h1>
-            <h2 style="text-align: center;">Clase 1 Vamos a contar!</h2>
-            
-        </div>
+<?php include "../headerAlumno.php" ?>
+
         <div class="container">
             <div class="left-aside" style="background-color: aquamarine; border-radius: 15px; position: relative; left: 45px;">
                 <h2 style="text-align: center;">1. Semillas y vasos</h2>

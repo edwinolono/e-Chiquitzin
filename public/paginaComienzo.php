@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>E-Chikitzin</title>
-    <meta name="author" content="Equipo 5">
-    <meta name="keywords" content="HTML, CSS">
-    <meta name="copyright" content="Equipo 5 2021">
-    <meta name="description" content="Página de inicio E-Chikitzin">
-    <meta name="robots" content="index">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php include "./icono.php"; ?>
+
     <link rel="stylesheet" href="/css/startingPage/startinPageStyle.css">
     
 </head>
@@ -25,7 +15,7 @@
         <div class="option">
             <div class="optionTitle">Registrarse</div>
             <div class="optionDescription">&Uacute;nete a nuestra comunidad y aprende divierti&eacute;ndote</div>
-            <a class="boton" href="signUp.php">Registrarse</a>
+            <a class="boton" href="paginaRegistro.php">Registrarse</a>
         </div>
     </div>
 </body>

@@ -12,7 +12,7 @@
 <body background="/images/signUp/backSpace.jpg">
     <div class="container">
 
-        <form id="signup" action="addUser.php" method="POST">
+        <form id="signup" action="registrarUsuario.php" method="POST">
             <div class="header">
                 <div class="login-titulo">
                     <h1>Sign Up</h1>

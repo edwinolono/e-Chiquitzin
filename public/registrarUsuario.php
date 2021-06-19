@@ -65,7 +65,7 @@
         ?>
         <?php
             //Vamos a obtener la página de login
-            include 'signUp.php';
+            include 'paginaRegistro.php';
         ?>
         <h1 class="errorAut">NO ACEPTASTE LOS TÉRMINOS DE USO</h1>
         <?php
