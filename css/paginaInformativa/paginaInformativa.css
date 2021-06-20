@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0%;
     height: fit-content;
-    width: 1392px;
+    width: 100%;
     overflow-x: hidden;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
