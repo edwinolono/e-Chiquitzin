@@ -1,23 +1,42 @@
 body{
-    background-image: url("/images/startingPageBackground.png");
-    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/paginaComienzo/fondoPaginaComienzo.png");
+    background-size: cover;
+    overflow-x: hidden;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-animation-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.title{   
+#contenedorPrincipal{
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid red;*/
+}
+
+#title{
+    width: 100%;   
     text-align: center;
     color: white;
     font-size: 8rem;
     margin-top: 6rem;
+    /*border: 1px solid yellow;*/
 }
 
-.container{
+#container{
     margin-top: 3rem;
     display: flex;
     flex-direction: row;
+    /*border: 1px solid gray;*/
 }
 
 .option{
     width: 50%;
+    /*border: 1px solid pink;*/
 }
 
 .optionTitle{
@@ -25,6 +44,7 @@ body{
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
+    /*border: 1px solid lightseagreen;*/
 }
 
 .optionDescription{
@@ -50,4 +70,5 @@ body{
     display: block;
     width: 250px;
     margin: 0 auto;
+    margin-top: 4rem;
 }

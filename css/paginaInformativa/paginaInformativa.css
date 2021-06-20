@@ -163,6 +163,7 @@ a:hover{
 }
 
 #vectoresD{
+    text-align: center;
     display: flex;
     flex-direction: row;
     width: 100%;

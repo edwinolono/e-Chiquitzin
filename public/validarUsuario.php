@@ -4,6 +4,7 @@
     $password = $_POST['password'];
     $rol = $_POST['rol'];
     
+    //Almacenamos los datos en un Array para imprimir los datos en consola
     $userInfo = array();
     $userInfo[0] = $email;
     $userInfo[1] = $password;
@@ -60,7 +61,7 @@
         ?>
         <?php
             //Vamos a obtener la página de login
-            include 'login.php';
+            include 'paginaInicioSesion.php';
         ?>
         <h1 class="errorAut">ERROR EN LA AUTENTIFICACIÓN</h1>
         <?php

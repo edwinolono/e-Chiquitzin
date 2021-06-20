@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include './icono.php' ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/signUp/signUp.css">
+    <link rel="stylesheet" href="/css/registro/registro.css">
     <title>Registrarse</title>
 </head>
 
-<body background="/images/signUp/backSpace.jpg">
+<body>
     <div class="container">
 
         <form id="signup" action="registrarUsuario.php" method="POST">
@@ -24,13 +19,13 @@
 
             <div class="inputs">
 
-                <input type="email" placeholder="E-mail" autofocus name="email" maxlength="30"/>
+                <input type="email" placeholder="E-mail" autofocus name="email" maxlength="30" required/>
 
-                <input type="password" placeholder="Contraseña" name="password" maxlength="15"/>
+                <input type="password" placeholder="Contraseña" name="password" maxlength="15" required/>
 
-                <input type="text" placeholder="Nombre" name="nombre" maxlength="15"/>
+                <input type="text" placeholder="Nombre" name="nombre" maxlength="15" required/>
 
-                <input type="text" placeholder="Apellido" name="apellido" maxlength="15"/>
+                <input type="text" placeholder="Apellido" name="apellido" maxlength="15" required/>
 
                 
 
@@ -50,15 +45,14 @@
                 </div>
 
                 <div class="checkboxy">
-                    <input name="checky" id="checky" value="1" type="checkbox" /><label class="terms">Acepto los terminos de uso</label>
+                    <input name="checky" id="checky" value="1" type="checkbox" required/><label class="terms">Acepto los terminos de uso</label>
                 </div>    
                     
-                <input type="submit" class="submit button" value="Registrarse"/>
-
+                <input type="submit" class="boton_registro" value="Registrarse"/>
+                <a class="boton_registro" href="paginaComienzo.php">Cancelar</a>
             </div>
-
+            
         </form>
-
     </div>
     <!--FIN WAVE-->
 </body>

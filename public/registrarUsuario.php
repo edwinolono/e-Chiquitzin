@@ -7,10 +7,6 @@
     $rol = $_POST["rol"];
     $checky = $_POST["checky"];
 
-    if($checky == null){
-        $checky = 0;
-    }
-
     $userInfo = array();
     $userInfo[0] = $email;
     $userInfo[1] = $password;
@@ -47,11 +43,7 @@
         $query = "INSERT INTO administrador (nombre,apellido,email,password) VALUES ('$nombre','$apellido','$email','$password')";
     }
 
-    
-
-    //Ejecutamos el query y el resultado se asigna a la variable result
-    if($checky=="1"){
-        $result = mysqli_query($con, $query);
+    $result = mysqli_query($con, $query);
 
         if($rol == "1"){
             header("location:menuAlumno.php");
@@ -61,6 +53,10 @@
             header("location:menuAdministrador.php");
         }
 
+    /*Ejecutamos el query y el resultado se asigna a la variable result
+    if($checky=="1"){
+        
+
     }else{
         ?>
         <?php
@@ -69,7 +65,7 @@
         ?>
         <h1 class="errorAut">NO ACEPTASTE LOS TÉRMINOS DE USO</h1>
         <?php
-    }
+    }*/
     
 
     //Obtenemos las filas que corresponden al resultado

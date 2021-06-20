@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <title>Log In</title>
-    <meta name="author" content="Equipo 5">
-    <meta name="keywords" content="HTML, CSS">
-    <meta name="copyright" content="Equipo 5 2021">
-    <meta name="description" content="Página de Log In E-Chikitzin">
-    <meta name="robots" content="index">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php include './icono.php' ?>
+
     <!--NORMALIZE CSS-->
-    <link rel="stylesheet" href="/css/login/normalize.css">
+    <link rel="stylesheet" href="/css/paginaInicioSesion/normalize.css">
     <!--HOJA DE ESTILOS-->
-    <link rel="stylesheet" href="/css/login/styles.css">
-    <link rel="stylesheet" href="/css/login/login.css">
-    
+    <link rel="stylesheet" href="/css/paginaInicioSesion/styles.css">
+    <link rel="stylesheet" href="/css/paginaInicioSesion/paginaInicioSesion.css">
 </head>
 
 <body>
@@ -30,7 +19,7 @@
     <div class="login">
 
         <div class="nave">
-            <img src="/images/loginAlumno/cohete.svg" alt="cohete">
+            <img src="/images/paginaInicioSesion/cohete.svg" alt="cohete">
         </div>
 
         <div class="login-contenedor">
@@ -39,14 +28,14 @@
             </div>
 
             <div class="login-centrar">
-                <form action="validaAlumno.php" method="POST">
+                <form action="validarUsuario.php" method="POST">
                     <div class="login_contenido">
-                        <input type="text" name="email" placeholder="Email">
+                        <input type="text" name="email" placeholder="Email" required>
                         <label class="login-field-icon fui-user" for="login-name"></label>
                     </div>
 
                     <div class="login_contenido">
-                        <input type="password" name="password" placeholder="Contraseña">
+                        <input type="password" name="password" placeholder="Contraseña" required>
                         <label class="login-field-icon fui-lock" for="login-pass"></label>
                     </div>
                     
@@ -66,10 +55,12 @@
                     </div>
 
                     <input type="submit" value="Iniciar sesión" class="boton_inicio">
-                    <a class="login-recordar" href="startingPage.html">¿Olvitaste tu contraseña?</a>
+                    <a class="login-recordar" href="paginaComienzo.php">¿Olvitaste tu contraseña?</a>
                 <form>
+                <div id="error"></div>
             </div>
         </div>
     </div>
+</body>
 
 </html>

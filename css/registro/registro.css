@@ -1,15 +1,20 @@
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial;
-    padding-top: 50px;
+  width: 100%;
+  background-image: url("/images/registro/fondoRegistro.jpg");
+  background-size: cover;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  margin: 0;
+  padding: 0%;
+  padding-top: 50px;
+  overflow-x: hidden;
 }
 
 .errorAut {
 	text-align: center;
 	width: 100%;
-    padding: 12px;
+  padding: 12px;
 	background-color: #a22;
 	color: #fff;
-	border-radius: 1rem;
 }
 
 .login-titulo {
@@ -242,4 +247,31 @@ input[type=password] {
 	  margin-top: -50px;
 	  opacity: 0;
 	}
-  }
+}
+
+.boton_registro {
+  border: 2px solid transparent;
+  background: #446baf;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 3px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.boton_registro:hover{
+  cursor: pointer;
+}
+
+a{
+  text-align: center;
+  color: #446baf;
+}
