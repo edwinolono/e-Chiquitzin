@@ -14,7 +14,7 @@
         </div>
         <div class="option">
             <div class="optionTitle">Registrarse</div>
-            <div class="optionDescription">&Uacute;nete a nuestra comunidad y aprende divierti&eacute;ndote</div>
+            <div class="optionDescription">&Uacute;nete a nuestra comunidad estudiantil y aprende divierti&eacute;ndote</div>
             <a class="boton" href="paginaRegistro.php">Registrarse</a>
         </div>
     </div>

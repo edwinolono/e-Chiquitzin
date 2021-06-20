@@ -37,7 +37,7 @@
                 <p>
                     Si es la primera vez que vas a usar nuestra aplicación, tendrás que registrate primero.
                     <br><br>
-                    Si ya eres parte de nuestra comunidad, entonces iniciarás sesión.
+                    Si ya eres parte de nuestra comunidad estudiantil, entonces iniciarás sesión.
                 </p><br><br>
                 <a class="boton" href="paginaComienzo.php">Comenzar</a>
             </div>
@@ -85,74 +85,68 @@
             <h1>Desarrolladores</h1>
             <div id="vectoresDesarrolladores">
                 <div id="vectoresD">
-
-                    <svg width="280" height="250">
+                    <svg width="230" height="160">
                         <defs>
                             <clipPath id="circleView">
-                                <circle cx="202" cy="125" r="78" fill="#FFFFFF" />            
+                                <circle cx="120" cy="110" r="50" fill="#FFFFFF" />            
                             </clipPath>
                         </defs>
-                    <image width="400" height="240" xlink:href="/images/paginaInformativa/Desarrollador_miguel.jpg" clip-path="url(#circleView)" />
+                    <image width="200" height="240" xlink:href="/images/paginaInformativa/Desarrollador_miguel.jpg" clip-path="url(#circleView)" />
                     </svg>
 
-                    <svg height="200" width="50">
-                        <line x1="50" y1="50" x2="50" y2="200" style="stroke:#bdf1ff;stroke-width:5" />
-                    </svg>
-
-                    <svg width="300" height="250">
+                    <svg width="230" height="160">
                         <defs>
                             <clipPath id="circleView">
-                                <circle cx="0" cy="125" r="95" fill="#FFFFFF" />            
+                                <circle cx="120" cy="110" r="50" fill="#FFFFFF" />            
                             </clipPath>
                         </defs>
-                    <image width="410" height="240" xlink:href= "/images/paginaInformativa/Desarrollador_jose.jpg" clip-path="url(#circleView)" />
+                    <image width="200" height="290" xlink:href="/images/paginaInformativa/Desarrollador_jose.jpg" clip-path="url(#circleView)" />
                     </svg>
 
-                    <svg height="200" width="50">
-                        <line x1="50" y1="50" x2="50" y2="200" style="stroke:#bdf1ff;stroke-width:5" />
-                    </svg>
-
-                    <svg width="300" height="250">
+                    <svg width="230" height="160">
                         <defs>
                             <clipPath id="circleView">
-                                <circle cx="202" cy="125" r="80" fill="#FFFFFF" />            
+                                <circle cx="120" cy="110" r="50" fill="#FFFFFF" />            
                             </clipPath>
                         </defs>
-                    <image width="400" height="240" xlink:href="/images/paginaInformativa/Desarrollador_edwin.jpg" clip-path="url(#circleView)" />
+                    <image width="230" height="240" xlink:href="/images/paginaInformativa/Desarrollador_edwin.jpg" clip-path="url(#circleView)" />
                     </svg>
 
-                    <svg height="200" width="50">
-                        <line x1="50" y1="50" x2="50" y2="200" style="stroke:#bdf1ff;stroke-width:5" />
-                    </svg>
-                    <svg width="280" height="250">
+                    <svg width="230" height="160">
                         <defs>
                             <clipPath id="circleView">
-                                <circle cx="202" cy="125" r="80" fill="#FFFFFF" />            
+                                <circle cx="120" cy="110" r="50" fill="#FFFFFF" />            
                             </clipPath>
                         </defs>
-                    <image width="400" height="240" xlink:href="/images/paginaInformativa/Desarrollador_diego.jpg" clip-path="url(#circleView)" />
+                    <image width="230" height="240" xlink:href="/images/paginaInformativa/Desarrollador_diego.jpg" clip-path="url(#circleView)" />
                     </svg>
+
+                    <svg width="230" height="160">
+                        <defs>
+                            <clipPath id="circleView">
+                                <circle cx="120" cy="110" r="50" fill="#FFFFFF" />            
+                            </clipPath>
+                        </defs>
+                    <image width="210" height="240" xlink:href="/images/paginaInformativa/Desarrollador_guillermo.jpg" clip-path="url(#circleView)" />
+                    </svg>
+
+                    <svg width="230" height="160">
+                        <defs>
+                            <clipPath id="circleView">
+                                <circle cx="120" cy="110" r="50" fill="#FFFFFF" />            
+                            </clipPath>
+                        </defs>
+                    <image width="200" height="240" xlink:href="/images/paginaInformativa/Desarrollador_alberto.jpg" clip-path="url(#circleView)" />
+                    </svg>
+
                 </div>
                 <div id="contenedorDescripcionVectorDesarrolladores">
-                <svg width="280" height="250">
-                        <defs>
-                            <clipPath id="circleView">
-                                <circle cx="202" cy="125" r="80" fill="#FFFFFF" />            
-                            </clipPath>
-                        </defs>
-                    <image width="400" height="240" xlink:href="/images/paginaInformativa/Desarrollador_guillermo.jpg" clip-path="url(#circleView)" />
-                    </svg>
-                    <svg height="200" width="50">
-                        <line x1="50" y1="50" x2="50" y2="200" style="stroke:#bdf1ff;stroke-width:5" />
-                    </svg>
-                    <svg width="280" height="250">
-                        <defs>
-                            <clipPath id="circleView">
-                                <circle cx="202" cy="125" r="80" fill="#FFFFFF" />            
-                            </clipPath>
-                        </defs>
-                    <image width="400" height="240" xlink:href="/images/paginaInformativa/Desarrollador_miguel.jpg" clip-path="url(#circleView)" />
-                    </svg>
+                    <div class="nombresDesarrolladores"><p>Miguel Angel Murga</p></div>
+                    <div class="nombresDesarrolladores"><p>José Miguel Morales</p></div>
+                    <div class="nombresDesarrolladores"><p>Edwin Oloño</p></div>
+                    <div class="nombresDesarrolladores"><p>Diego Eduardo Parrilla</p></div>
+                    <div class="nombresDesarrolladores"><p>Guillermo Carmona</p></div>
+                    <div class="nombresDesarrolladores"><p>Alberto Pacheco</p></div>
                 </div>
             </div>
         </div>
