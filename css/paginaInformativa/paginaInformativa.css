@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0%;
+    height: 3400px;
+    width: 100%;
+    overflow-x: hidden;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-animation-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+header{
+    width: 100%;
+    height: 3%;
+    background-color: #0c2e8b;
+    /*border: 1px solid red;*/
+}
+
+#nombreAplicacion{
+    margin-left: 1rem;
+    font-size: 4rem;
+    width: fit-content;
+    color: white;
+    float: left;
+    /*border: 1px solid red;*/
+}
+
+.anclajes{
+    width: fit-content;
+    padding: 2rem;
+    float: right;
+    /*border: 1px solid red;*/
+}
+
+a{
+    margin: 2rem;
+    size: 1rem;
+    color: #787878;
+    text-decoration: none;
+    /*border: 1px solid red;*/
+}
+
+a:hover{
+    color: white;
+}
+
+.contenedorPrincipal {    
+    width: 100%;
+    height: 93%;
+    margin: 0;
+    padding: 0;
+    background-color: #0c2e8b;
+    /*border: 1px solid red;*/
+}
+
+#bienvenida{
+    height: 689px;
+    width: 100%;
+    color: white;
+    /*border: 1px solid green;*/
+}
+
+#imagenBienvenida{
+    margin-top: 4rem;
+    float: right;
+    width: 50%;
+    /*border: 1px solid blue;*/
+}
+
+#informacionBienvenida {
+    margin-left: 4rem;
+    height: 100%;
+    width: 40%;
+    float: left;
+    text-align: center;
+    /*border: 1px solid yellow;*/
+}
+
+#pregunta1 {
+    margin-top: 13rem;
+    /*border: 1px solid red;*/
+}
+
+#contenidoComienzo{
+    width: 100%;
+    height: 20rem;
+    background-color: #bdf1ff;
+    text-align: center;
+    color: #0c2e8b;
+    /*border: 1px solid red;*/
+}
+
+#tituloComienzo {
+    padding: 1rem;    
+    width: 100%;
+    color: #0c2e8b;
+    /*border: 1px solid red;*/
+}
+
+.boton{
+    font-size: 21px;
+    border: 2px solid transparent;
+    text-align: center;
+    background-color: #0c2e8b;
+    color: white;
+    line-height: 25px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 4px;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
+
+#contenedorFuncionalidad {
+    height: 30rem;
+    text-align: center;
+    color: white;
+}
+
+#vectoresFuncionalidad{
+    display: flex;
+    flex-direction: row;
+}
+
+#contenedorDescripcionVector{
+    width: 50%;
+    text-align: left;
+}
+
+#vectores{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#vectores > svg {
+    margin-left: 80%;
+}
+
+.descripcionVector{
+    color: white;
+}
+
+/*DESARROLLADORES*/
+
+#contenedorDesarrolladores{
+    margin-top: 588px;
+    width: 100%;
+    height: 400px;
+    background-color: #446BAF;
+    text-align: center;
+    color: white;
+    /*border: 1px solid pink;*/
+}
+
+#vectoresD{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /*border: 1px solid yellow;*/
+}
+
+#contenedorDescripcionVectorDesarrolladores{
+    width: 100%;
+    height: 66px;
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: row;
+}
+
+.nombresDesarrolladores{
+    width: 16.6%;
+    height: 100%;
+    color: #bdf1ff;
+    /*border: 1px solid gray;*/
+}
+
+/*LOCALIZACION DE DESARROLLO*/
+
+#localizacion {
+    text-align: center;
+    color: white;
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    height: 4%;
+    background-color: #446BAF;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.footerColumna{
+    width: 33.16%;
+    color: white;
+}
+
+#linkGitHub{
+    color: white;
+}
