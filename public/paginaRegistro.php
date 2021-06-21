@@ -10,7 +10,7 @@
         <form id="signup" action="registrarUsuario.php" method="POST">
             <div class="header">
                 <div class="login-titulo">
-                    <h1>Sign Up</h1>
+                    <h1>Registro</h1>
                 </div>
 
             </div>

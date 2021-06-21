@@ -8,6 +8,7 @@ body{
     -webkit-animation-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    background-color: #0c2e8b;
 }
 
 body::-webkit-scrollbar {

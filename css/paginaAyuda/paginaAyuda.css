@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0%;
+    height: 3400px;
+    width: 100%;
+    overflow-x: hidden;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-animation-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #0c2e8b;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+  header{
+    width: 100%;
+    height: 3%;
+    background-color: #0c2e8b;
+    /*border: 1px solid red;*/
+}
+
+#nombreAplicacion{
+    margin-left: 1rem;
+    font-size: 4rem;
+    width: fit-content;
+    color: white;
+    float: left;
+    /*border: 1px solid red;*/
+}
+
+.anclajes{
+    width: fit-content;
+    padding: 2rem;
+    float: right;
+    /*border: 1px solid red;*/
+}
+
+a{
+    margin: 2rem;
+    size: 1rem;
+    color: #787878;
+    text-decoration: none;
+    /*border: 1px solid red;*/
+}
+
+a:hover{
+    color: white;
+}
+
+
+#contenedorAyuda{
+    width: 100%;
+    height: 90%;
+    text-align: center;
+}
+
+#indice{
+    margin: auto;
+    margin-top: 0;
+    /*border: 1px solid red;*/
+    width: 67%;
+    height: 17%;
+    background-repeat: no-repeat;
+    background-image: url("/images/paginaAyuda/fondoAyuda.jpg");
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+
+#indiceContenido{
+    color: white;
+    margin: auto;
+    width: fit-content;
+    /*border: 1px solid red;*/
+    text-align: center;
+}
+
+#separador{
+    background: #bdf1ff;
+    width: 100%;
+    height: 6%;
+}
+
+#respuestas{
+    color: white;
+}
