@@ -1,20 +1,21 @@
 <?php include "headerAlumno.php" ?>
 
         <div class="container">
+            <h1>bienvenido <?php print_r($_SESSION['miSesion'][0]) ?></h1>
             <div class="left-aside" >
                 <div class="stick">
-                <h3>Recuerda terminar tus clases antes de empezar tu examen</h3>
+                    <h3>Recuerda terminar tus clases antes de empezar tu examen</h3>
                 </div>
             </div>
             <div class="right-aside" >
-                <div style="height: 50%; background-color: azure; border-radius: 15px;" >
+                <div style="height: 50%; background-color: transparent; border-radius: 15px;" >
                     <div style="width: 50%; height: 90%; float:left; ">
                         <div class="subject" style="background-color: red;">
                             <h4 style="text-align: center;">Conteo</h4>
                             <ol>
-                                <li><a href="./ejercicios/Clase.php">Clase 1</a></li>
-                                <li><a href="./ejercicios/Clase2.html">Clase 2</a></li>
-                                <li><a href="./ejercicios/Clase3.html">Clase 3</a></li>
+                                <li><a href="Clase.php">Clase 1</a></li>
+                                <li><a href="Clase2.html">Clase 2</a></li>
+                                <li><a href="Clase3.html">Clase 3</a></li>
                                 <li><a href="./ejercicios/Clase4.html">Clase 4</a></li>
                             </ol>
                             <img src="../../images/suma.png" class="img-subject">
@@ -31,7 +32,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="height: 50%; background-color: azure; border-radius: 15px;">
+                <div style="height: 50%; background-color: transparent; border-radius: 15px;">
                     <div style="width: 50%; height: 90%; float:left; ">
                         <div class="subject" style="background-color: brown;">
                             <h4 style="text-align: center;">Contemos hasta 15</h4>

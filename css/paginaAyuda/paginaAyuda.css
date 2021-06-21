@@ -91,3 +91,23 @@ h1{
 #respuestas{
     color: white;
 }
+
+.contenedorRespuesta{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid green;
+
+}
+
+.respuestaTexto{
+    text-align: center;
+    width: 50%;
+    border: 1px solid pink;
+}
+
+.imagenRespuesta{
+    width: 50%;
+    border: 1px solid red;
+}
+

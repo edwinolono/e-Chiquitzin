@@ -51,6 +51,9 @@
     if($dbRows){
         if($rol == 1){
             header("location:menuAlumno.php");
+            echo "<h1> Bienvenido ";
+            print_r($_SESSION[0]);
+            echo "</h1";
         }else if($rol == 2){
             header("location:menuProfesor.html");
         }else if($rol == 3){

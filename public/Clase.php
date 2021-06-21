@@ -1,6 +1,5 @@
-<html>
-<?php include "../headerAlumno.php" ?>
-<body>
+<?php include "headerAlumno.php" ?>
+
         <div class="container">
             <div class="left-aside" style="background-color: aquamarine; border-radius: 15px; position: relative; left: 45px;">
                 <h2 style="text-align: center;">Semillas y vasos</h2>

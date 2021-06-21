@@ -1,8 +1,6 @@
 <?php include "icono.php"; ?>
-
-        <link rel="stylesheet" href="../../css/paginaComienzo/paginaComienzo.css">
-        <link rel="stylesheet" href="../../css/menu/menu.css">
         <link rel="stylesheet" href="/css/headerAlumno/headerAlumno.css">
+        <link rel="stylesheet" href="/css/menuAlumno/menuAlumno.css">
     </head>
     <body>
         <header>

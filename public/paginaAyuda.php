@@ -21,18 +21,19 @@
             </div>
             <div id="separador"></div>
             <div id="respuestas">
-                <div id="respuesta1">
+                <div>
                     <h1>¿Cómo resuelvo ejercicios?</h1>
-                    <div id="contenedorRespuesta">
-                        <div id="respuestaTexto">
-                        <p>Para poder resolver ejercicios debes dirigirte a la página de mení del alumno
-                            , después seleccionar la clase, recomendamos comenzar desde la primera
-                            e ir subi   endo de clase conforme tu resultado
-                        </p>
+                    <div class="contenedorRespuesta">
+                        <div class="respuestaTexto">
+                            <p>Para poder resolver ejercicios debes dirigirte a la página de mení del alumno
+                                , después seleccionar la clase, recomendamos comenzar desde la primera
+                                e ir subi   endo de clase conforme tu resultado
+                            </p>
                         </div>
-                        <div id="imagenRespuesta"></div>
+                        <div class="imagenRespuesta">
+
+                        </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
