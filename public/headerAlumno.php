@@ -1,7 +1,7 @@
-<?php include "./icono.php"; ?>
+<?php include "icono.php"; ?>
 
-        <link rel="stylesheet" href="/css/startingPage/startinPageStyle.css">
-        <link rel="stylesheet" href="../css/menu/menu.css">
+        <link rel="stylesheet" href="../../css/paginaComienzo/paginaComienzo.css">
+        <link rel="stylesheet" href="../../css/menu/menu.css">
         <link rel="stylesheet" href="/css/headerAlumno/headerAlumno.css">
     </head>
     <body>
