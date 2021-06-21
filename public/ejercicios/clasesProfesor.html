@@ -2,7 +2,6 @@
 <htm>
     <head>
         <title>Profesor e-chiquitzin</title>
-        <link rel="stylesheet" href="../../css/paginaComienzo/paginaComienzo.css">
     </head>
     <body class="Clasesmain">
         <h1 style="text-align: center; color: rgba(69, 4, 155, 0.8);"> e-Chiquitzin</h1>
@@ -14,11 +13,11 @@
                   <ul>
                   <li><a href="/public/menuProfesor.html" class="navlink">Inicio</a></li>
                   <li><a href="/public/listaAlumnos.html" class="navlink">Listas</a></li>
-                  <li><a href="/public/clasesProfesor.html" class="navlink">Clases</a></li>
+                  <li><a href="/public/ejercicios/clasesProfesor.html" class="navlink">Clases</a></li>
                   <li><a href="/public/startingPage.html" class="navlink">Salir</a></li>
                   </ul>
                   </nav>
-                </div>
+            </div>
 
                 <h2 style="color: darkblue; text-align: center;"> Clases.</h2>
 
@@ -111,6 +110,16 @@
 </htm>
 
 <style>
+
+    body{
+      background-size: cover;
+        overflow-x: hidden;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        -webkit-animation-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
     .navlink{
         color: rgb(49, 4, 107);
         font-size: 32px;
@@ -147,9 +156,9 @@
         flex-direction: row;
     }
 
-    .container{
-    clear:both;
-    overflow:auto;
+    .container{   
+      flex-direction: row;
+      overflow:auto;
     background-color: rgba(20,100,200,0.4);
     padding-left: 5px;
     padding-top: 10px;
@@ -160,7 +169,7 @@
     .logo img{
         float:left;
         padding-left: 10%;
-        padding-top: 10%;}
+        padding-top: 0%;}
 
     ul li{
         display: inline-block;
