@@ -23,10 +23,16 @@
             <div id="respuestas">
                 <div id="respuesta1">
                     <h1>¿Cómo resuelvo ejercicios?</h1>
-                    <p>Para poder resolver ejercicios debes dirigirte a la página de mení del alumno
-                        , después seleccionar la clase, recomendamos comenzar desde la primera
-                        e ir subiendo de clase conforme tu resultado
-                    </p>
+                    <div id="contenedorRespuesta">
+                        <div id="respuestaTexto">
+                        <p>Para poder resolver ejercicios debes dirigirte a la página de mení del alumno
+                            , después seleccionar la clase, recomendamos comenzar desde la primera
+                            e ir subi   endo de clase conforme tu resultado
+                        </p>
+                        </div>
+                        <div id="imagenRespuesta"></div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
