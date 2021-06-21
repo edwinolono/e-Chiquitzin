@@ -2,8 +2,8 @@
     //Conexión a la base de datos
     $con = mysqli_connect(
         'localhost',
-        'miguel',
-        '1234',
+        'root',
+        'digitienda',
         'e_chiquitzin'
     );
 
