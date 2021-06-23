@@ -3,7 +3,9 @@ body{
     padding: 0%;
     width: 100%;
     height: fit-content;
-    background-image: url("/images/menuAlumno/fondoMenuAlumno.jpg");
+    background-color: #0c2e8b;
+    /*background-color: #bdf1ff;*/
+    /*background-image: url("/images/menuAlumno/fondoMenuAlumno.jpg");*/
     overflow-x: hidden;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     -webkit-animation-sizing: border-box;
@@ -15,15 +17,23 @@ body::-webkit-scrollbar {
     display: none;
 }
   
-.container{
+.containerPrincipal{
     height: 600px;
     width: 100%;
     /*border: 1px solid red;*/
 }
 
+h2{
+    color: white;
+}
+
+h4{
+    color: #0c2e8b;
+}
+
 .left-aside{
     float: left;
-    width: 30%;
+    width: 29%;
     height: 100%;
     /*border: 1px solid green;*/
 }
@@ -34,12 +44,12 @@ body::-webkit-scrollbar {
     height: 100%;
     /*border: 1px solid green;*/
 }
+
 .questions{
     position: relative;
     left: 50px;
     /*background-color: #ffffff;*/
     border-radius: 15px;
-    border: solid 5px black;
     height: 70%;
 
 }
@@ -59,12 +69,13 @@ body::-webkit-scrollbar {
 }
 .subject{
     position: relative;
-    border: solid 2px black;
     height: 90%;
     width: 200px;
     left: 100px;
     border-radius: 15px;
 }
+
+
 .img-subject{
     float: left;
     position: relative;
@@ -76,7 +87,11 @@ body::-webkit-scrollbar {
     float: right;
     color: black;
 }
-ol{
-    background-color: azure;
+
+li > a {
+    color: #0c2e8b;
 }
 
+li > a:hover {
+    color: white;
+}

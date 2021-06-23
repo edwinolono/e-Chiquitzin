@@ -1,16 +1,21 @@
 <?php include "headerAlumno.php" ?>
 
-        <div class="container">
-            <h1>bienvenido <?php print_r($_SESSION['miSesion'][0]) ?></h1>
+        <div class="containerPrincipal">
+            <h2>Bienvenido
+                <?php 
+                session_start();
+                echo $_SESSION["miSesion"][0];
+                ?>
+            </h2>
             <div class="left-aside" >
                 <div class="stick">
                     <h3>Recuerda terminar tus clases antes de empezar tu examen</h3>
                 </div>
             </div>
-            <div class="right-aside" >
+            <div class="right-aside">
                 <div style="height: 50%; background-color: transparent; border-radius: 15px;" >
                     <div style="width: 50%; height: 90%; float:left; ">
-                        <div class="subject" style="background-color: red;">
+                        <div class="subject" style="background-color: #CD6155;">
                             <h4 style="text-align: center;">Conteo</h4>
                             <ol>
                                 <li><a href="Clase.php">Clase 1</a></li>
@@ -22,7 +27,7 @@
                         </div>
                     </div>
                     <div style="width: 50%; height: 90%; float: right; ">
-                        <div class="subject" style="background-color: purple;" >
+                        <div class="subject" style="background-color: azure;" >
                             <h4 style="text-align: center;">Figuras</h4>
                             <ol >
                                 <li><a href="./ejercicios/Clase5.html">Clase 5</a></li>
@@ -34,7 +39,7 @@
                 </div>
                 <div style="height: 50%; background-color: transparent; border-radius: 15px;">
                     <div style="width: 50%; height: 90%; float:left; ">
-                        <div class="subject" style="background-color: brown;">
+                        <div class="subject" style="background-color: #A3E4D7;">
                             <h4 style="text-align: center;">Contemos hasta 15</h4>
                             <ol>
                                 <li><a href="./ejercicios/Clase7.html">Clase 7</a></li>
@@ -46,7 +51,7 @@
                         </div>
                     </div>
                     <div style="width: 50%; height: 90%; float: right;">
-                        <div class="subject" style="background-color: green;">
+                        <div class="subject" style="background-color: #F9E79F;">
                             <h4 style="text-align: center;">Recolección de datos</h4>
                             <ol>
                                 <li><a href="./ejercicios/Clase.html">Clase 1</a></li>
