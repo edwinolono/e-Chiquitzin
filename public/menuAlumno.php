@@ -19,9 +19,9 @@
                             <h4 style="text-align: center;">Conteo</h4>
                             <ol>
                                 <li><a href="Clase1.php">Clase 1</a></li>
-                                <li><a href="Clase2.html">Clase 2</a></li>
-                                <li><a href="Clase3.html">Clase 3</a></li>
-                                <li><a href="./ejercicios/Clase4.html">Clase 4</a></li>
+                                <li><a href="Clase2.php">Clase 2</a></li>
+                                <li><a href="Clase3.php">Clase 3</a></li>
+                                <li><a href="Clase4.php">Clase 4</a></li>
                             </ol>
                             <img src="../../images/suma.png" class="img-subject">
                         </div>
@@ -42,10 +42,10 @@
                         <div class="subject" style="background-color: #A3E4D7;">
                             <h4 style="text-align: center;">Contemos hasta 15</h4>
                             <ol>
-                                <li><a href="./ejercicios/Clase7.html">Clase 7</a></li>
-                                <li><a href="./ejercicios/Clase8.html">Clase 8</a></li>
-                                <li><a href="./ejercicios/Clase9.html">Clase 9</a></li>
-                                <li><a href="./ejercicios/Clase10.html">Clase 10</a></li>
+                                <li><a href="Clase7.php">Clase 7</a></li>
+                                <li><a href="Clase8.php">Clase 8</a></li>
+                                <li><a href="Clase9.php">Clase 9</a></li>
+                                <li><a href="Clase10.php">Clase 10</a></li>
                             </ol>
                             <img src="../../images/suma.png" class="img-subject">
                         </div>
@@ -55,9 +55,6 @@
                             <h4 style="text-align: center;">Extras</h4>
                             <ol>
                                 <li><a href="Ahorcado.php">Ahorcado</a></li>
-                                <li><a href="./ejercicios/Clase.html">Clase 1</a></li>
-                                <li><a href="./ejercicios/Clase.html">Clase 1</a></li>
-                                <li><a href="./ejercicios/Clase.html">Clase 1</a></li>
                             </ol>
                             <img src="../../images/lupa.png" class="img-subject">
                         </div>
