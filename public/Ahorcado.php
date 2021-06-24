@@ -1,7 +1,6 @@
-<html>
-    <head>
-        <title>Ejemplo de juego</title>
-        <link rel="stylesheet" href="../../css/paginaComienzo/paginaComienzo.css">
+<?php include "icono.php"; ?>
+        <link rel="stylesheet" href="/css/headerAlumno/headerAlumno.css">
+        <link rel="stylesheet" href="../../css/clases/extras/ahorcado.css">
     </head>
     <script lang="JavaScript">
         var hombre = new Array("  ___\n" , "   |\n", "   O\n", "  /", "|", "\\\n", "  /", "\\\n", "___")
@@ -99,13 +98,17 @@
         }
     </script>
     <body>
-        <h2>Juego del ahorcado</h2>
-        <div class="nav-bar">
-            <div class="sub-menu"> <a>Inicio</a> <a>Mis tareas</a> <a>Ayuda</a></div>
-            <h1 class="logo"><a href="../menuAlumno.php">e-Chiquitzin</a></h1>
-            <h2 style="text-align: center;">Juguemos un poco</h2>
-        </div>
-        <div class="container">
+        <header>
+            <div id="nombreAplicacion">e-Chiquitzin</div>
+            <div class="anclajes">
+                <a href="./menuAlumno.php">Estadísticas</a>
+                <a href="./menuAlumno.php">Inicio</a>
+                <a href="./paginaAyuda.php">Ayuda</a>
+                <a href="./cerrarSesion.php">Cerrar Sesión</a>
+            </div>
+        </header>
+        <div id="container">
+            <h2>Juego del ahorcado</h2>
             <form name=visor>
                 <center>
                     <table width=547>

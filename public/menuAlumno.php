@@ -18,7 +18,7 @@
                         <div class="subject" style="background-color: #CD6155;">
                             <h4 style="text-align: center;">Conteo</h4>
                             <ol>
-                                <li><a href="Clase.php">Clase 1</a></li>
+                                <li><a href="Clase1.php">Clase 1</a></li>
                                 <li><a href="Clase2.html">Clase 2</a></li>
                                 <li><a href="Clase3.html">Clase 3</a></li>
                                 <li><a href="./ejercicios/Clase4.html">Clase 4</a></li>
@@ -52,9 +52,9 @@
                     </div>
                     <div style="width: 50%; height: 90%; float: right;">
                         <div class="subject" style="background-color: #F9E79F;">
-                            <h4 style="text-align: center;">Recolección de datos</h4>
+                            <h4 style="text-align: center;">Extras</h4>
                             <ol>
-                                <li><a href="./ejercicios/Clase.html">Clase 1</a></li>
+                                <li><a href="Ahorcado.php">Ahorcado</a></li>
                                 <li><a href="./ejercicios/Clase.html">Clase 1</a></li>
                                 <li><a href="./ejercicios/Clase.html">Clase 1</a></li>
                                 <li><a href="./ejercicios/Clase.html">Clase 1</a></li>
