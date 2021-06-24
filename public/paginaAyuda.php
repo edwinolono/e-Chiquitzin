@@ -26,7 +26,7 @@
                     <h1>¿Cómo resuelvo ejercicios?</h1>
                     <div class="contenedorRespuesta">
                         <div class="respuestaTexto">
-                            <p>Para poder resolver ejercicios debes dirigirte a la página de mení del alumno
+                            <p>Para poder resolver ejercicios debes dirigirte a la página de menú del alumno
                                 , después seleccionar la clase, recomendamos comenzar desde la primera
                                 e ir subi   endo de clase conforme tu resultado
                             </p>
