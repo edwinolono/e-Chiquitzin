@@ -10,7 +10,7 @@
     $userInfo[1] = $password;
     $userInfo[2] = $rol;
 
-    function console_log($userInfo, $with_script_tags = true) {
+    /*function console_log($userInfo, $with_script_tags = true) {
         $js_code = 'console.log(' . json_encode($userInfo, JSON_HEX_TAG) .');';
         if ($with_script_tags) {
             $js_code = '<script>' . $js_code . '</script>';
@@ -18,7 +18,7 @@
         echo $js_code;
     }
 
-    console_log($userInfo);
+    console_log($userInfo);*/
     //Abrimos una sesión
     session_start();
     $_SESSION['miSesion'] = array();

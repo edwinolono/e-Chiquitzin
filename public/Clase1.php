@@ -140,7 +140,7 @@
         <div id="opciones">
             <input type="button" value="Reiniciar" onClick="reiniciar(this.form)">
             <input type="button" value="Evaluar" onClick="evaluar(this.form)">
-            <input type="button" value="Guardar">
+            <!--<input type="button" value="Guardar">-->
         </div>
         
         <br>  
