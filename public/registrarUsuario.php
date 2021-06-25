@@ -50,7 +50,7 @@
         }else if($rol == "2"){
             header("location:menuProfesor.html");
         }else if($rol == "3"){
-            header("location:menuAdministrador.php");
+            header("location:adminHome.php");
         }
 
     /*Ejecutamos el query y el resultado se asigna a la variable result

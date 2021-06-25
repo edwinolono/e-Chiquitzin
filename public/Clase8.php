@@ -84,7 +84,7 @@
     }
 
     function evaluar(visor) {
-        if (visor.select1.value == resultado[1]) {
+        if (visor.select1.value == resultado[0]) {
             document.getElementById("ele1").style.border = "2px solid green";
             banderas.push(true);
         } else {
@@ -92,7 +92,7 @@
             document.getElementById("ele1").style.border = "2px solid red";
         }
 
-        if (visor.select2.value == resultado[2]) {
+        if (visor.select2.value == resultado[1]) {
             document.getElementById("ele2").style.border = "2px solid green";
             banderas.push(true);
         } else {
@@ -100,7 +100,7 @@
             document.getElementById("ele2").style.border = "2px solid red";
         }
 
-        if (visor.select3.value == resultado[3]) {
+        if (visor.select3.value == resultado[2]) {
             document.getElementById("ele3").style.border = "2px solid green";
             banderas.push(true);
         } else {
@@ -108,7 +108,7 @@
             document.getElementById("ele3").style.border = "2px solid red";
         }
 
-        if (visor.select4.value == resultado[4]) {
+        if (visor.select4.value == resultado[3]) {
             document.getElementById("ele4").style.border = "2px solid green";
             banderas.push(true);
         } else {
@@ -116,7 +116,7 @@
             document.getElementById("ele4").style.border = "2px solid red";
         }
 
-        if (visor.select5.value == resultado[5]) {
+        if (visor.select5.value == resultado[4]) {
             document.getElementById("ele5").style.border = "2px solid green";
             banderas.push(true);
         } else {
@@ -124,7 +124,7 @@
             document.getElementById("ele5").style.border = "2px solid red";
         }
 
-        if (visor.select6.value == resultado[6]) {
+        if (visor.select6.value == resultado[5]) {
             document.getElementById("ele6").style.border = "2px solid green";
             banderas.push(true);
         } else {

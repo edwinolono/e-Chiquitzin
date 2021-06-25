@@ -10,6 +10,7 @@
             </div>
         </header>
 
+
         <div class="container">
 
         <div class="ejercicio" style="background-color: #F39C12">
@@ -20,6 +21,7 @@
                     <br>
                     <img src="../../images/Clase 6 img 2.png" style="width: 220px; height: 220px; left: 50px;">
                 </div> 
+
             </div>
 
             <div class="ejercicio" style="background-color: #F39C12">

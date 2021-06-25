@@ -9,9 +9,7 @@
                 <a href="./cerrarSesion.php">Cerrar Sesión</a>
             </div>
         </header>
-
         <div class="container">
-
             <div class="ejercicio" style="background-color: #F39C12">
                 <h2>La casa</h2>
                 <h3>Trabaja individual y forma las figuras</h3>
@@ -29,7 +27,6 @@
                    <img src="../../images/Clase 5 img 2.png" style="max-width: 90%; max-height: 90%;">
                 </div> 
             </div>
-            
         </div>
     </body>
 </htm>
