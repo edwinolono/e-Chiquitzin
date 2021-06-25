@@ -57,7 +57,7 @@
         }else if($rol == 2){
             header("location:menuProfesor.html");
         }else if($rol == 3){
-            header("location:menuAdministrador.php");
+            header("location:adminHome.php");
         }
     //Si no nos redirijirá a la página de login con un error
     }else{
