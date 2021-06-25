@@ -30,8 +30,8 @@
                         <div class="subject" style="background-color: azure;" >
                             <h4 style="text-align: center;">Figuras</h4>
                             <ol >
-                                <li><a href="./ejercicios/Clase5.html">Clase 5</a></li>
-                                <li><a href="./ejercicios/Clase6.html">Clase 6</a></li>
+                                <li><a href="Clase5.php">Clase 5</a></li>
+                                <li><a href="Clase6.php">Clase 6</a></li>
                             </ol>
                             <img src="../../images/figuras.png" class="img-subject">
                         </div>
