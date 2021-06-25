@@ -107,8 +107,7 @@
                     </div>
                 </div>
                 <div class="right-aside">
-                    <video width="600" height="480" controls style="position: relative; left: 300px; border: 15px solid pink;">
-                        <source src="../..videos/Video1.mp4" type="video/mp4">
+                    <video width="600" src="https://www.youtube.com/watch?v=hI8A_w42bK0" height="480" autoplay style="position: relative; left: 300px; border: 15px solid pink;">
                         Your browser does not support the video tag.
                     </video>
                 </div>
