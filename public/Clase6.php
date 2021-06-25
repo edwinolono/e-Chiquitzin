@@ -1,18 +1,20 @@
-<!DOCTYPE html>
-<htm>
-    <head>
-        <title>Clase 6 usemos el tangram</title>
-        <link rel="stylesheet" href="../../css/paginaComienzo/paginaComienzo.css">
-        <link rel="stylesheet" href="../../css/menu/menu.css">
+
+<?php include "icono.php"; ?>
+        <link rel="stylesheet" href="/css/headerAlumno/headerAlumno.css">
+        <link rel="stylesheet" href="/css/clases/todas/clases.css">
     </head>
     <body>
-        <div class="nav-bar">
-            <div class="sub-menu"> <a>Inicio</a> <a>Mis tareas</a> <a>Ayuda</a></div>
-            <h1 class="logo"><a href="../menuAlumno.php">e-Chiquitzin</a></h1>
-            <h2 style="text-align: center;">Clase 6 Usemos el tangram</h2>
-        </div>
+        <header>
+            <div id="nombreAplicacion">e-Chiquitzin</div>
+            <div class="anclajes">
+                <a href="./menuAlumno.php">Estadísticas</a>
+                <a href="./menuAlumno.php">Inicio</a>
+                <a href="./paginaAyuda.php">Ayuda</a>
+                <a href="./cerrarSesion.php">Cerrar Sesión</a>
+            </div>
+        </header>
         <div class="container">
-            <div class="left-aside" style="background-color: rgb(201, 20, 201); border-radius: 15px; position: relative; left: 45px;">
+            <div class="left-aside" style="background-color: rgb(201, 20, 201); height:600px; border-radius: 15px; position: relative; left: 45px;">
                 <h2 style="text-align: center;">Miau miau</h2>
                 <h3 style="text-align: center;"></h3>
                 <div style="background-color: azure; border-radius: 15px; width: 90%; height: auto; position: relative; left: 15px;">
