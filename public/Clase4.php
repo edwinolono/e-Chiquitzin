@@ -19,7 +19,7 @@
                     <h2>La máquina de juntar</h2>
                     <h3>Trabajen en equipo y metan cosas por los tubos</h3>
                     <div>
-                        <img src="/images/clases/clase4/Clase 4 img 7.png" style="width: 150px; height: 150px; position: absolute; left: 60%;"><br>
+                        <img src="/images/clases/clase4/Clase 4 img 7.png" style="width: 150px; height: 150px; left: 60%;"><br>
                         <img src="/images/clases/clase4/Clase 4 img 1.png" style="max-width: 35%; height: 100px;">
                         <input type="number" min="0" max="5"> <br>
                         <img src="/images/clases/clase4/Clase 4 img 2.png" style="max-width: 35%; height: 50px;">

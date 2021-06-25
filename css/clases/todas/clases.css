@@ -43,7 +43,7 @@ h4{
     flex-direction: row;
 }
 
-input[type=button]{
+input[type=button], input[type=submit]{
     font-size: 21px;
     border: 2px solid transparent;
     text-align: center;

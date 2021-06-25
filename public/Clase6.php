@@ -1,40 +1,38 @@
-<!DOCTYPE html>
-<htm>
-    <head>
-        <title>Clase 6 usemos el tangram</title>
-        <link rel="stylesheet" href="../../css/paginaComienzo/paginaComienzo.css">
-        <link rel="stylesheet" href="../../css/menu/menu.css">
-    </head>
+<?php include 'headerClases.php' ?>
     <body>
-        <div class="nav-bar">
-            <div class="sub-menu"> <a>Inicio</a> <a>Mis tareas</a> <a>Ayuda</a></div>
-            <h1 class="logo"><a href="../menuAlumno.php">e-Chiquitzin</a></h1>
-            <h2 style="text-align: center;">Clase 6 Usemos el tangram</h2>
-        </div>
+        <header>
+            <div id="nombreAplicacion">e-Chiquitzin</div>
+            <div class="anclajes">
+                <a href="./menuAlumno.php">Estadísticas</a>
+                <a href="./menuAlumno.php">Inicio</a>
+                <a href="./paginaAyuda.php">Ayuda</a>
+                <a href="./cerrarSesion.php">Cerrar Sesión</a>
+            </div>
+        </header>
+
         <div class="container">
-            <div class="left-aside" style="background-color: rgb(201, 20, 201); border-radius: 15px; position: relative; left: 45px;">
-                <h2 style="text-align: center;">Miau miau</h2>
-                <h3 style="text-align: center;"></h3>
-                <div style="background-color: azure; border-radius: 15px; width: 90%; height: auto; position: relative; left: 15px;">
-                   <h4 style="text-align: center;">Dibujemos un gatito</h4>
-                    <img src="../../images/Clase 6 img 1.png" style="width: 220px; height: 220px; position: relative; left: 50px;">
-                    <img src="../../images/Clase 6 img 2.png" style="width: 220px; height: 220px; position: relative; left: 50px;">
-                </div>
-            </div>
-            <div class="right-aside" style="background-color: rgb(238, 139, 9); border-radius: 15px; position: relative; left: 200px;">
-                <h2 style="text-align: center;">Armemos más figuras</h2>
-                <div style="background-color: azure; border-radius: 15px; width: 90%; height: auto; position: relative; left: 25px;">
-                    <h4 style="text-align: center;">Identifica qué piezas se acomodaron de diferente manera</h4>
+
+        <div class="ejercicio" style="background-color: #F39C12">
+                <h2>Miau miau</h2>
+                <h3>Dibujemos un gatito</h3>
+                <div>
+                    <img src="../../images/Clase 6 img 1.png" style="width: 220px; height: 220px; left: 50px;">
                     <br>
-                   <img src="../../images/Clase 6 img 3.png" style="max-width: 250px; max-height: 250px;">
-                   <img src="../../images/Clase 6 img 4.png" style="max-width: 250px; max-height: 250px;">
-                   <br>
-                   <img src="../../images/Clase 6 img 5.png" style="max-width: 250px; max-height: 250px;">
-                   <img src="../../images/Clase 6 img 6.png" style="max-width: 350px; max-height: 350px;">
-                   
-                </div>
+                    <img src="../../images/Clase 6 img 2.png" style="width: 220px; height: 220px; left: 50px;">
+                </div> 
+            </div>
+
+            <div class="ejercicio" style="background-color: #F39C12">
+                <h2>Armemos más figuras</h2>
+                <h3>Identifica qué piezas se acomodaron de diferente manera</h3>
+                <div>
+                    <img src="../../images/Clase 6 img 3.png" style="max-width: 250px; max-height: 250px;">
+                    <img src="../../images/Clase 6 img 4.png" style="max-width: 250px; max-height: 250px;">
+                    <br>
+                    <img src="../../images/Clase 6 img 5.png" style="max-width: 250px; max-height: 250px;">
+                    <img src="../../images/Clase 6 img 6.png" style="max-width: 350px; max-height: 350px;">
+                </div> 
             </div>
         </div>
-  
     </body>
 </htm>

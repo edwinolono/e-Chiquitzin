@@ -7,7 +7,7 @@
         var cosasConteoResultados = ["amanda", "cecilia", "armando", "dario"];
         var banderas = [];
         function reiniciar(visor){
-            alert('Se reiniciará los resultados de la clase');
+            //alert('Se reiniciará los resultados de la clase');
             visor.semillasAna.value= null;
         }
         function evaluar(visor){
@@ -69,8 +69,16 @@
             
             if(evaluacion == 1){
                 alert("Correcto, felicidades");
+                visor.victorias.value++;
+                document.getElementById("victorias").value ++;
+                //alert(document.getElementById("victorias").value);
+                //alert(document.visor.victorias.value);
+                reiniciar(visor);
             }else{
                 alert("Síguelo intentando, tu puedes");
+                visor.derrotas.value++;
+                //alert(document.visor.derrotas.value);
+                banderas = [];
             }
             
             banderas = [];
@@ -90,7 +98,7 @@
         </header>
         <div class="container">
             <h1>Clase 1</h1>
-            <form>
+            <form action="guardarResultados.php" method="POST">
                 <div class="ejercicio" style="background-color: #CD6155">
                 
                     <h2>Semillas y vasos</h2>
@@ -136,11 +144,17 @@
                         <input type="radio" name="select4" value="jimena" id="jimena">Jimena
                     </div> 
                 </div>
+            
+                <input type="number" name="clase" value=1 hidden>
+                <br>
+                Victorias:<input type="number" name="victorias" id="victorias" value=0 readonly>
+                <br>
+                Derrotas:<input type="number" name="derrotas" id="victorias" value=0 readonly>
                 <br>
                 <div id="opciones">
                     <input type="button" value="Reiniciar" onClick="reiniciar(this.form)">
                     <input type="button" value="Evaluar" onClick="evaluar(this.form)">
-                    <!--<input type="button" value="Guardar">-->
+                    <input type="submit" value="Guardar">
                 </div>
                 <br>  
             </form>     
