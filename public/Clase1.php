@@ -9,6 +9,7 @@
         function reiniciar(visor){
             //alert('Se reiniciará los resultados de la clase');
             visor.semillasAna.value= null;
+            document.getElementById("semillasAnaInput").style.border = "2px solid black";
         }
         function evaluar(visor){
             //Ana
@@ -69,14 +70,14 @@
             
             if(evaluacion == 1){
                 alert("Correcto, felicidades");
-                visor.victorias.value++;
+                //visor.victorias.value++;
                 document.getElementById("victorias").value ++;
                 //alert(document.getElementById("victorias").value);
                 //alert(document.visor.victorias.value);
                 reiniciar(visor);
             }else{
                 alert("Síguelo intentando, tu puedes");
-                visor.derrotas.value++;
+                document.getElementById("derrotas").value ++;
                 //alert(document.visor.derrotas.value);
                 banderas = [];
             }
@@ -90,7 +91,7 @@
         <header>
             <div id="nombreAplicacion">e-Chiquitzin</div>
             <div class="anclajes">
-                <a href="./menuAlumno.php">Estadísticas</a>
+                <a href="./estadisticasAlumno.php">Estadísticas</a>
                 <a href="./menuAlumno.php">Inicio</a>
                 <a href="./paginaAyuda.php">Ayuda</a>
                 <a href="./cerrarSesion.php">Cerrar Sesión</a>
@@ -112,7 +113,7 @@
                         </ol>
                         <img src="../../images/clases/clase1/Clase1 img 1.png" style="border: 2px solid black; border-radius: 15px; max-width: 90%; left: 15px;">
                         <h4>¿Cuántas semillas tiene Elisa?</h4>
-                        Número de semillas:<input type="number" min="0" max="5" name="semillasAna" id="semillasAnaInput">
+                        Número de semillas:<input type="number" min="0" name="semillasAna" id="semillasAnaInput">
                     </div> 
                 </div>
 
@@ -149,7 +150,7 @@
                 <br>
                 Victorias:<input type="number" name="victorias" id="victorias" value=0 readonly>
                 <br>
-                Derrotas:<input type="number" name="derrotas" id="victorias" value=0 readonly>
+                Derrotas:<input type="number" name="derrotas" id="derrotas" value=0 readonly>
                 <br>
                 <div id="opciones">
                     <input type="button" value="Reiniciar" onClick="reiniciar(this.form)">

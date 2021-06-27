@@ -16,8 +16,8 @@
     //1. Vamos a consultar si ya hay un registro en la base de datos correspondiente a la clase y al alumno
     $registroClase = mysqli_query($con, "SELECT * FROM calificacion WHERE idEjercicio = '$clase' AND idAlumno='$idAlumno'");
     $filasEncontradas = mysqli_num_rows($registroClase);
-
-    if($filasEncontradas){
+    
+    if($filasEncontradas == 1){
         //Si hay un registro, obtenemos sus victorias y derrotas guardadas
         while($row = mysqli_fetch_array($registroClase)){
             $registroCalificacion = $row['idCalificacion'];
@@ -32,9 +32,9 @@
         //Actualizamos la tabla con la sumas de victorias y derrotas
         $actualizarCalificacion = mysqli_query($con, "UPDATE calificacion SET victoria='$sumaVictorias', derrota='$sumaDerrotas' WHERE idAlumno='$idAlumno' AND idEjercicio='$clase'");
         header("location:menuAlumno.php");
-    }else{
+    }else if($filasEncontradas == 0){
         //Si no hay un registro, entonces insertamos las nuevas victorias y derrotas
-        $insertarCalificacion = mysqli_query($con,"INSERT INTO calificacion (victoria,derrota,idAlumno,idEjercicio) VALUES ('$victorias','$derrotas','$idAlumno','$clase')");
+        $insertarCalificacion = mysqli_query($con,"INSERT INTO calificacion (victoria,derrota,idAlumno,idEjercicio) VALUES ('$nuevasVictorias','$nuevasDerrotas','$idAlumno','$clase')");
         header("location:menuAlumno.php");
     }
 
