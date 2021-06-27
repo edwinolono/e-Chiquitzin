@@ -4,7 +4,7 @@
             <h2>Bienvenido
                 <?php 
                 session_start();
-                echo $_SESSION["miSesion"][0];
+                echo $_SESSION["miSesion"][1];
                 ?>
             </h2>
             <div class="left-aside" >

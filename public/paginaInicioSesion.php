@@ -28,6 +28,7 @@
             </div>
 
             <div class="login-centrar">
+
                 <form action="validarUsuario.php" method="POST">
                     <div class="login_contenido">
                         <input type="text" name="email" placeholder="Email" required>
@@ -55,7 +56,7 @@
                     </div>
 
                     <input type="submit" value="Iniciar sesión" class="boton_inicio">
-                    <a class="login-recordar" href="paginaComienzo.php">¿Olvitaste tu contraseña?</a>
+                    <a class="login-recordar" href="paginaRegistro.php">¿No estás registrado?</a>
                 <form>
                 <div id="error"></div>
             </div>

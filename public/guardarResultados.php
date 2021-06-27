@@ -4,45 +4,41 @@
 
     //Obtenemos los valores que vienen por parte del formulario
     $clase = $_POST["clase"];
-    $victorias = $_POST["victorias"];
-    $derrotas = $_POST["derrotas"];
-    $email = $_SESSION["miSesion"][0];
-    $password = $_SESSION["miSesion"][1];
+    $nuevasVictorias = $_POST["victorias"];
+    $nuevasDerrotas = $_POST["derrotas"];
+    
+    //Obtenemos el usuario que hizo el ejercicio
+    $idAlumno = $_SESSION["miSesion"][0];
 
     //Incluimos la conexión a la base de datos
     include 'db.php';
 
-    //1. Primero obtenemos el id del usuario al que vamos a insertar o actualizar los datos
-    $result = mysqli_query($con,"SELECT * FROM alumno WHERE email= '$email' AND password = '$password'");
+    //1. Vamos a consultar si ya hay un registro en la base de datos correspondiente a la clase y al alumno
+    $registroClase = mysqli_query($con, "SELECT * FROM calificacion WHERE idEjercicio = '$clase' AND idAlumno='$idAlumno'");
+    $filasEncontradas = mysqli_num_rows($registroClase);
 
-    while($row = mysqli_fetch_array($result))   {
-        $idAlumno = $row['idAlumno'];
+    if($filasEncontradas){
+        //Si hay un registro, obtenemos sus victorias y derrotas guardadas
+        while($row = mysqli_fetch_array($registroClase)){
+            $registroCalificacion = $row['idCalificacion'];
+            $registroVictorias = $row['victoria'];
+            $registroDerrotas = $row['derrota'];
+        }
+
+        //Sumamos los valores de las victoria y de las derrotas nuevos con los registrados
+        $sumaVictorias = $registroVictorias + $nuevasVictorias;
+        $sumaDerrotas = $registroDerrotas + $nuevasDerrotas;
+
+        //Actualizamos la tabla con la sumas de victorias y derrotas
+        $actualizarCalificacion = mysqli_query($con, "UPDATE calificacion SET victoria='$sumaVictorias', derrota='$sumaDerrotas' WHERE idAlumno='$idAlumno' AND idEjercicio='$clase'");
+        header("location:menuAlumno.php");
+    }else{
+        //Si no hay un registro, entonces insertamos las nuevas victorias y derrotas
+        $insertarCalificacion = mysqli_query($con,"INSERT INTO calificacion (victoria,derrota,idAlumno,idEjercicio) VALUES ('$victorias','$derrotas','$idAlumno','$clase')");
+        header("location:menuAlumno.php");
     }
 
-    $result2 = mysqli_query($con,"INSERT INTO calificacion (victoria,derrota,idAlumno,idEjercicio) VALUES ('$victorias','$derrotas','$idAlumno','$clase')");
-
-
-    $result3 = mysqli_query($con,"SELECT * FROM calificacion WHERE idAlumno='$idAlumno'");
-
-                    echo "<table border='1'>
-                    <tr>
-                    <th>Victorias</th>
-                    <th>Derrotas</th>
-                    <th>Clase</th>
-                    </tr>";
-
-    while($row2 = mysqli_fetch_array($result3))   {
-                    echo "<tr>";
-                    echo "<td>" . $row2['victoria'] . "</td>";
-                    echo "<td>" . $row2['derrota'] . "</td>";
-                    echo "<td>" . $row2['idEjercicio'] . "</td>";
-                    echo "</tr>";
-    }
-                    echo "</table>";
-
-    mysqli_free_result($result);
-    mysqli_free_result($result2);
-    mysqli_free_result($result3);
+    mysqli_free_result($registroClase);
     mysqli_close($con);
 ?>
 

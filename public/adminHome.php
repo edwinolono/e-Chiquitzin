@@ -17,14 +17,14 @@
             <div class="option">
                 <div class="optionTitle">Profesores</div>
                 <div class="optionDescription">Revisa los profesores registrados.</div>
-                <a class="boton" href="#popupProfesores">Profesores.</a>
+                <a class="boton" href="#popupProfesores">Profesores</a>
             </div>
         </div>
     </div>
 
     
     <div id="linkSalir">
-            <h2> <a href="/public/paginaComienzo.php">Salir</a> </h2>
+            <h2> <a href="/public/cerrarSesion.php">Salir</a> </h2>
         </div>
 
     <?php

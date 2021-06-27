@@ -4,73 +4,117 @@
     $password = $_POST['password'];
     $rol = $_POST['rol'];
     
-    //Almacenamos los datos en un Array para imprimir los datos en consola
-    $userInfo = array();
-    $userInfo[0] = $email;
-    $userInfo[1] = $password;
-    $userInfo[2] = $rol;
-
-    /*function console_log($userInfo, $with_script_tags = true) {
-        $js_code = 'console.log(' . json_encode($userInfo, JSON_HEX_TAG) .');';
-        if ($with_script_tags) {
-            $js_code = '<script>' . $js_code . '</script>';
-        }
-        echo $js_code;
-    }
-
-    console_log($userInfo);*/
-    //Abrimos una sesión
-    session_start();
-    $_SESSION['miSesion'] = array();
-    $_SESSION['miSesion'][0] = $email;
-    $_SESSION['miSesion'][1] = $password;
-    $_SESSION['miSesion'][2] = $rol;
-
-    //Conexión a base de datos
+    //Obtenemos la conexión a la base de datos
     include 'db.php';
 
-
-    //Definimos un query para la base de datos
+    //1. Buscamos un registro en los usuarios con los datos proporcionados en el formulario
     if($rol == 1){
-        $query = "SELECT * FROM alumno WHERE email= '$email' AND password = '$password'";    
+        $buscarRegistro = mysqli_query($con,"SELECT * FROM alumno WHERE email= '$email' AND password = '$password'");    
+        $filasEncontradas = mysqli_num_rows($buscarRegistro);
+
+        //1.1. Validamos que haya un usuario registrado con esos datos
+            if($filasEncontradas){
+                //Si hay un registro
+                while($row = mysqli_fetch_array($buscarRegistro)){
+                    $idAlumno = $row['idAlumno'];
+                    $nombreAlumno = $row['nombre'];
+                    $apellidoAlumno = $row['apellido'];
+                    unset($row);
+                }
+
+                session_start();
+                $_SESSION['miSesion'] = array();
+                $_SESSION['miSesion'][0] = $idAlumno;
+                $_SESSION['miSesion'][1] = $nombreAlumno;
+                $_SESSION['miSesion'][2] = $apellidoAlumno;
+                $_SESSION['miSesion'][3] = $email;
+                $_SESSION['miSesion'][4] = $password;
+
+                header("location:menuAlumno.php");
+
+            }else{
+                //No hay un registro
+                ?>
+                <?php
+                    //Vamos a obtener la página de login
+                    include 'paginaInicioSesion.php';
+                ?>
+                <h1 class="errorAut">ERROR EN LA AUTENTIFICACIÓN</h1>
+                <?php
+            }
+
     }else if($rol == 2){
-        $query = "SELECT * FROM profesor WHERE email= '$email' AND password = '$password'";    
+        $buscarRegistro = mysqli_query($con,"SELECT * FROM profesor WHERE email= '$email' AND password = '$password'");    
+        $filasEncontradas = mysqli_num_rows($buscarRegistro);
+
+        //1.1. Validamos que haya un usuario registrado con esos datos
+            if($filasEncontradas){
+                //Si hay un registro
+                while($row = mysqli_fetch_array($buscarRegistro)){
+                    $idProfesor = $row['idProfesor'];
+                    $nombreProfesor = $row['nombre'];
+                    $apellidoProfesor = $row['apellido'];
+                    unset($row);
+                }
+
+                session_start();
+                $_SESSION['miSesion'] = array();
+                $_SESSION['miSesion'][0] = $idProfesor;
+                $_SESSION['miSesion'][1] = $nombreProfesor;
+                $_SESSION['miSesion'][2] = $apellidoProfesor;
+                $_SESSION['miSesion'][3] = $email;
+                $_SESSION['miSesion'][4] = $password;
+
+                header("location:menuProfesor.html");
+
+            }else{
+                //No hay un registro
+                ?>
+                <?php
+                    //Vamos a obtener la página de login
+                    include 'paginaInicioSesion.php';
+                ?>
+                <h1 class="errorAut">ERROR EN LA AUTENTIFICACIÓN</h1>
+                <?php
+            }
     }else if($rol == 3){
-        $query = "SELECT * FROM administrador WHERE email= '$email' AND password = '$password'";    
+        $buscarRegistro = mysqli_query($con,"SELECT * FROM administrador WHERE email= '$email' AND password = '$password'");    
+        $filasEncontradas = mysqli_num_rows($buscarRegistro);
+
+        //1.1. Validamos que haya un usuario registrado con esos datos
+            if($filasEncontradas){
+                //Si hay un registro
+                while($row = mysqli_fetch_array($buscarRegistro)){
+                    $idAdministrador = $row['id'];
+                    $nombreAdministrador = $row['nombre'];
+                    $apellidoAdministrador = $row['apellido'];
+                    unset($row);
+                }
+
+                session_start();
+                $_SESSION['miSesion'] = array();
+                $_SESSION['miSesion'][0] = $idAdministrador;
+                $_SESSION['miSesion'][1] = $nombreAdministrador;
+                $_SESSION['miSesion'][2] = $apellidoAdministrador;
+                $_SESSION['miSesion'][3] = $email;
+                $_SESSION['miSesion'][4] = $password;
+
+                header("location:adminHome.php");
+
+            }else{
+                //No hay un registro
+                ?>
+                <?php
+                    //Vamos a obtener la página de login
+                    include 'paginaInicioSesion.php';
+                ?>
+                <h1 class="errorAut">ERROR EN LA AUTENTIFICACIÓN</h1>
+                <?php
+            }
     }
 
-    
-
-    //Ejecutamos el query y el resultado se asigna a la variable result
-    $result = mysqli_query($con, $query);
-
-    //Obtenemos las filas que corresponden al resultado
-    $dbRows = mysqli_num_rows($result);
-
-    //Si encontró registros nos mandará a menu.html
-    if($dbRows){
-        if($rol == 1){
-            header("location:menuAlumno.php");
-            echo "<h1> Bienvenido ";
-            print_r($_SESSION[0]);
-            echo "</h1";
-        }else if($rol == 2){
-            header("location:menuProfesor.html");
-        }else if($rol == 3){
-            header("location:adminHome.php");
-        }
-    //Si no nos redirijirá a la página de login con un error
-    }else{
-        ?>
-        <?php
-            //Vamos a obtener la página de login
-            include 'paginaInicioSesion.php';
-        ?>
-        <h1 class="errorAut">ERROR EN LA AUTENTIFICACIÓN</h1>
-        <?php
-    }
     //Limpiamos resultado
-    mysqli_free_result($result);
-
+    mysqli_free_result($buscarRegistro);
+    
     //Cerramos conexión con bd
     mysqli_close($con);

@@ -13,8 +13,4 @@
     }else{
         echo "No conectado a la base de datos";
     }*/
-
-    function cerrarConexion($con){
-        $con -> close();
-    }
 ?>
