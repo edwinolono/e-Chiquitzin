@@ -10,7 +10,6 @@
             </div>
         </header>
 
-
         <div class="container">
 
         <div class="ejercicio" style="background-color: #F39C12">
