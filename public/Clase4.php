@@ -4,7 +4,106 @@
     </head>
 
     <script>
-        //TODO: script para la funcionalidad del ejercicio
+        //Definimos las respuestas correctas del ejercicio
+        var suma1 = 3;
+        var suma2 = 3;
+        var suma3 = 4;
+        var suma4 = 4;
+        var suma5 = 5;
+        var suma6 = 5;
+        var banderas = [];
+
+        //Función para limpiar los campos
+        function reiniciar(visor){
+            visor.suma1.value=null;
+            visor.suma2.value=null;
+            visor.suma3.value=null;
+            visor.suma4.value=null;
+            visor.suma5.value=null;
+            visor.suma6.value=null;
+            
+            document.getElementById("suma1").style.border = "2px solid black";
+            document.getElementById("suma2").style.border = "2px solid black";
+            document.getElementById("suma3").style.border = "2px solid black";
+            document.getElementById("suma4").style.border = "2px solid black";
+            document.getElementById("suma5").style.border = "2px solid black";
+            document.getElementById("suma6").style.border = "2px solid black";
+        }
+
+        //Función para evaluar el ejercicio
+        function evaluar(visor){
+            if(visor.suma1.value == suma1){
+                banderas.push(true);
+                document.getElementById("suma1").style.border = "2px solid green";
+            }else{
+                banderas.push(false);
+                document.getElementById("suma1").style.border = "2px solid red";
+            }
+
+            if(visor.suma2.value == suma2){
+                banderas.push(true);
+                document.getElementById("suma2").style.border = "2px solid green";
+            }else{
+                document.getElementById("suma2").style.border = "2px solid red";
+                banderas.push(false);
+            }
+
+            if(visor.suma3.value == suma3){
+                banderas.push(true);
+                document.getElementById("suma3").style.border = "2px solid green";
+            }else{
+                document.getElementById("suma3").style.border = "2px solid red";
+                banderas.push(false);
+            }
+
+            if(visor.suma4.value == suma4){
+                banderas.push(true);
+                document.getElementById("suma4").style.border = "2px solid green";
+            }else{
+                banderas.push(false);
+                document.getElementById("suma4").style.border = "2px solid red";
+            }
+
+            if(visor.suma5.value == suma5){
+                banderas.push(true);
+                document.getElementById("suma5").style.border = "2px solid green";
+            }else{
+                banderas.push(false);
+                document.getElementById("suma5").style.border = "2px solid red";
+            }
+
+            if(visor.suma6.value == suma6){
+                banderas.push(true);
+                document.getElementById("suma6").style.border = "2px solid green";
+            }else{
+                banderas.push(false);
+                document.getElementById("suma6").style.border = "2px solid red";
+            }
+
+            var evaluacion = 0;
+
+            for (const bandera of banderas) {
+                if(bandera == false){
+                    evaluacion = 0;
+                    break;
+                }else{
+                    evaluacion = 1;
+                }
+            }
+            
+            if(evaluacion == 1){
+                alert("Correcto, felicidades");
+                document.getElementById("victorias").value ++;
+                reiniciar(visor);
+            }else{
+                alert("Síguelo intentando, tu puedes");
+                document.getElementById("derrotas").value ++;
+                banderas = [];
+            }
+            
+            banderas = [];
+        }
+            
     </script>
 
     <body>
@@ -28,17 +127,17 @@
                     <div>
                         <img src="/images/clases/clase4/Clase 4 img 7.png" style="width: 150px; height: 150px; left: 60%;"><br>
                         <img src="/images/clases/clase4/Clase 4 img 1.png" style="max-width: 35%; height: 100px;">
-                        <input type="number" min="0" max="5" name="tubo1"> <br>
+                        <input type="number" min="0" max="5" name="suma1" id="suma1"> <br>
                         <img src="/images/clases/clase4/Clase 4 img 2.png" style="max-width: 35%; height: 50px;">
-                        <input type="number" min="0" max="5" name="tubo2"> <br>
+                        <input type="number" min="0" max="5" name="suma2" id="suma2"> <br>
                         <img src="/images/clases/clase4/Clase 4 img 3.png" style="max-width: 35%; height: 50px;">
-                        <input type="number" min="0" max="5" name="tubo3"> <br>
+                        <input type="number" min="0" max="5" name="suma3" id="suma3"> <br>
                         <img src="/images/clases/clase4/Clase 4 img 4.png" style="max-width: 35%; height: 50px;">
-                        <input type="number" min="0" max="5" name="tubo4"> <br>
+                        <input type="number" min="0" max="5" name="suma4" id="suma4"> <br>
                         <img src="/images/clases/clase4/Clase 4 img 5.png" style="max-width: 35%; height: 50px;">
-                        <input type="number" min="0" max="5" name="tubo5"> <br>
+                        <input type="number" min="0" max="5" name="suma5" id="suma5"> <br>
                         <img src="/images/clases/clase4/Clase 4 img 6.png" style="max-width: 35%; height: 50px;">
-                        <input type="number" min="0" max="5" name="tubo6"> <br>
+                        <input type="number" min="0" max="5" name="suma6" id="suma6"> <br>
                     </div> 
                 </div>
 
@@ -60,7 +159,7 @@
                     </div> 
                 </div>
 
-                <input type="number" name="clase" value=3 hidden>
+                <input type="number" name="clase" value=4 hidden>
                 <br>
                 Victorias:<input type="number" name="victorias" id="victorias" value=0 readonly>
                 <br>
