@@ -18,7 +18,7 @@
         var munecos = 8;
         var banderas = [];
 
-        //Definimos las funciones para la evaluación del ejercicio
+        //Función para limpiar los campos del ejercicio
         function reiniciar(visor){
             visor.paletas.value = null;
             visor.dulces.value = null;
@@ -47,6 +47,7 @@
             document.getElementById("munecosInput").style.border = "1px solid black";
         }
 
+        //Definimos la función para evaluar el ejercicio
         function evaluar(visor){
             //Paletas
             if(visor.paletas.value == paletas){

@@ -7,7 +7,19 @@
         var cosasConteoResultados = ["amanda", "cecilia", "armando", "dario"];
         var banderas = [];
         function reiniciar(visor){
-            //alert('Se reiniciará los resultados de la clase');
+            try {
+                var radio = document.querySelector('input[type=radio][name=select1]:checked');
+                radio.checked = false;
+                var radio2 = document.querySelector('input[type=radio][name=select2]:checked');
+                radio2.checked = false;
+                var radio3 = document.querySelector('input[type=radio][name=select3]:checked');
+                radio3.checked = false;
+                var radio4 = document.querySelector('input[type=radio][name=select4]:checked');
+                radio4.checked = false;    
+            } catch (error) {
+                alert("Has dejado radios opciones sin seleccionar");
+            }
+            
             visor.semillasAna.value= null;
             document.getElementById("semillasAnaInput").style.border = "2px solid black";
         }
